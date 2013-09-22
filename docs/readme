@@ -1,0 +1,34 @@
+vCard
+Contact information is included using an XML representation of a vCard
+The vCard shall be conformant to:
+http://tools.ietf.org/html/draft-ietf-vcarddav-vcardxml
+representation with
+http://tools.ietf.org/html/draft-ietf-vcarddav-vcardrev-19
+field definitions.
+The schema for the vCard is:
+https://www.bedework.org/svn/bwxml/releases/bedework-3.8/schemas/vcard/vcard.xsd which is
+incorporated in the schema for this document.
+
+Only Text and integer types are permitted
+
+Of the Property Parameters listed in Section 5 of http://tools.ietf.org/html/draft-ietf-vcarddav-
+vcardrev-19 only VALUE is permitted
+
+Only the following properties are permitted
+KIND
+FN
+N
+ADR
+TEL
+EMAIL
+TZ
+TITLE
+ORG
+
+The vCard element type definition refers to a schema within a draft RFC. We anticipate that the
+final RFC will be identical in the definitions we use here, and when it is finalized we will adjust
+the reference. If the final version differs from the draft in a way that is significant to this
+specification, then this document will be modified. This document requires this specific version
+of the vCard specification. Any subsequent updates of the vCard specification will require this
+document to be updated to incorporate it.
+
