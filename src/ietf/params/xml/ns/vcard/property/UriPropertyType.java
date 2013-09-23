@@ -6,7 +6,6 @@
 //
 package ietf.params.xml.ns.vcard.property;
 
-import ietf.params.xml.ns.vcard.property.BasePropertyType;
 import java.util.Objects;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

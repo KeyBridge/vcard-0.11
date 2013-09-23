@@ -56,7 +56,7 @@ public class ArrayOfParameters {
    * </pre>
    * <p/>
    *
-   * Objects of the following type(s) are allowed in the list null null null   {@link JAXBElement }{@code <}{@link PidParamType }{@code >}
+   * Objects of the following type(s) are allowed in the list null null null null   {@link JAXBElement }{@code <}{@link PidParamType }{@code >}
      * {@link JAXBElement }{@code <}{@link TextParamType }{@code >}
    * {@link JAXBElement }{@code <}{@link UriParamType }{@code >}
    * {@link JAXBElement }{@code <}{@link TzParamType }{@code >}
