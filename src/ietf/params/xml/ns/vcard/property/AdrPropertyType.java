@@ -51,13 +51,54 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class AdrPropertyType extends BasePropertyType {
 
+  /**
+   * A PO Box number.
+   */
   protected TextListPropertyType pobox;
+  /**
+   * An address extension. e.g. mail stop.
+   */
   protected TextListPropertyType ext;
+  /**
+   * The street address.
+   */
   protected TextListPropertyType street;
+  /**
+   * The City.
+   */
   protected TextListPropertyType locality;
+  /**
+   * The State.
+   */
   protected TextListPropertyType region;
+  /**
+   * The Postal Code.
+   */
   protected TextListPropertyType code;
+  /**
+   * The country code (ISO2)
+   */
   protected TextListPropertyType country;
+
+  public AdrPropertyType() {
+  }
+
+  /**
+   * Fully qualified constructor
+   * <p/>
+   * @param street   the street
+   * @param locality the city
+   * @param region   the state
+   * @param code     the postal code (e.g. zip)
+   * @param country  the country code (ISO2)
+   */
+  public AdrPropertyType(String street, String locality, String region, String code, String country) {
+    setStreet(street);
+    setLocality(locality);
+    setRegion(region);
+    setCode(code);
+    setCountry(country);
+  }
 
   /**
    * Gets the value of the pobox property.
@@ -119,7 +160,7 @@ public class AdrPropertyType extends BasePropertyType {
    * @param value allowed object is {@link TextListPropertyType }
    *
    */
-  public void setStreet(String value) {
+  public final void setStreet(String value) {
     this.street = new TextListPropertyType(value);
   }
 
@@ -143,7 +184,7 @@ public class AdrPropertyType extends BasePropertyType {
    * @param value allowed object is {@link TextListPropertyType }
    *
    */
-  public void setLocality(String value) {
+  public final void setLocality(String value) {
     this.locality = new TextListPropertyType(value);
   }
 
@@ -167,7 +208,7 @@ public class AdrPropertyType extends BasePropertyType {
    * @param value allowed object is {@link TextListPropertyType }
    *
    */
-  public void setRegion(String value) {
+  public final void setRegion(String value) {
     this.region = new TextListPropertyType(value);
   }
 
@@ -191,7 +232,7 @@ public class AdrPropertyType extends BasePropertyType {
    * @param value allowed object is {@link TextListPropertyType }
    *
    */
-  public void setCode(String value) {
+  public final void setCode(String value) {
     this.code = new TextListPropertyType(value);
   }
 
@@ -215,7 +256,7 @@ public class AdrPropertyType extends BasePropertyType {
    * @param value allowed object is {@link TextListPropertyType }
    *
    */
-  public void setCountry(String value) {
+  public final void setCountry(String value) {
     this.country = new TextListPropertyType(value);
   }
 
